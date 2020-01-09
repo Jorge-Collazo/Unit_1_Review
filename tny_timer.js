@@ -1,14 +1,23 @@
+"useStrict"
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Review Assignment
 
    Event Timer
-   Author: 
-   Date:   
+   Author: Jorge Collazo
+   Date:   1-9-20
 
 */
 
+function showClock(){
+   var thisDay = new Date("May 19, 2018, 9:31:27 a.m.")
+   var localDate = thisDay.toLocalDateString();
+   var localTime = thisDay.toLocaleDateString();
+   document.getElementById("currentTime").innerHTML = "<span>localDate</span><span>localTime</span>";
+   
+}
 
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
